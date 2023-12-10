@@ -31,3 +31,6 @@ function plusOne(digits){
     return digits;
 };
 console.log(plusOne(digits = [1,2,3]))
+
+// time complexity is O(N) because we are looping through an array so our time is dependant on the array
+// space complexity is O(1) because it's just one var we are dealing with essentially
