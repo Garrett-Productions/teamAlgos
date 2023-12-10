@@ -10,3 +10,6 @@
 // Explanation: The array represents the integer 123.
 // Incrementing by one gives 123 + 1 = 124.
 // Thus, the result should be [1,2,4].
+
+//Solving:
+//working through the array backwards, if the array is [1,2,9] we need to return [1,3,0], so if there is a 9 on the far left we need to go to the left
