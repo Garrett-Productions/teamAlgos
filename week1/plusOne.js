@@ -12,13 +12,14 @@
 // Thus, the result should be [1,2,4].
 
 //Solving:
-//working through the array backwards, if the array is [1,2,9] we need to return [1,3,0], so if there is a 9 on the far left we need to go to the left
+//working through the array backwards, checking the far right number if the array is [1,2,9] we need to return [1,3,0], 
+// so if there is a 9 on the far right we need to go to the left and increase that num, first edge case
 
 function plusOne(digits){
     for(let i = digits.length - 1; i >= 0; i--){
         //if digits is less than 9, at this first iteration, increase the num, and return it
         if(digits[i]< 9){
-            digits[i]= digits[i]+1;
+            digits[i] = digits[i]+1;
             return digits;
         } else {
             digits[i] = 0;
@@ -31,6 +32,9 @@ function plusOne(digits){
     return digits;
 };
 console.log(plusOne(digits = [1,2,3]))
+
+// problem I ran into was, I was getting the output of [1,2,3,4,0]. I found I needed to do the length minus 1
+
 
 // time complexity is O(N) because we are looping through an array so our time is dependant on the array
 // space complexity is O(1) because it's just one var we are dealing with essentially
