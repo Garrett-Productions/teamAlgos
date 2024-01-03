@@ -1,0 +1,1 @@
+Here is my algo and the theory and thought process behind it
